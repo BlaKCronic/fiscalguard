@@ -1,0 +1,23 @@
+{
+  "fecha": "2026-11-23T02:27:01",
+  "entrada": "hdfs://namenode:9000/fiscalguard/raw/cfdi",
+  "spark": {
+    "segundos": 27.8,
+    "emisores": 98459,
+    "cfdi_validos": 18047046,
+    "monto": 260114346871.98,
+    "recursos": "spark://spark-master:7077"
+  },
+  "mapreduce": {
+    "segundos": 100.0
+  },
+  "verificacion": {
+    "disponible": true,
+    "emisores_mapreduce": 98459,
+    "cfdi_mapreduce": 18047046,
+    "monto_mapreduce": 260114346871.98,
+    "rfc_con_diferencias": 0,
+    "identicos": true
+  },
+  "aceleracion_spark": 3.6
+}

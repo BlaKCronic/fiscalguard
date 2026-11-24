@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FiscalGuard</title><link rel="stylesheet" href="app.css"></head><body>
+<main id="login"><form id="lf"><div class="logo"><span>FG</span></div><h1>FiscalGuard</h1><p>Prioriza qué contribuyentes revisar primero.</p>
+<label>Usuario<input id="u" autocomplete="username" required></label>
+<label>Contraseña<input id="p" type="password" autocomplete="current-password" required></label>
+<button>Entrar</button><p id="le" class="err" role="alert"></p></form></main>
+<div id="app" hidden>
+<aside class="side"><div class="logo" title="FiscalGuard"><span>FG</span></div>
+<nav aria-label="Secciones">
+<button data-v="resumen" class="on" title="Resumen" aria-label="Resumen"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><span>Resumen</span></button>
+<button data-v="alertas" title="Alertas" aria-label="Alertas"><svg viewBox="0 0 24 24"><path d="M6 16V11a6 6 0 0 1 12 0v5l2 2H4zM10 21h4"/></svg><span>Alertas</span></button>
+<button data-v="contrib" title="Contribuyente y red" aria-label="Contribuyente y red"><svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="7" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M8 7.5l7.6-.4M7.3 8.2l3.6 7.6M16.8 9.2l-3.6 6.6"/></svg><span>Red</span></button>
+</nav>
+<button id="out" title="Salir" aria-label="Salir"><svg viewBox="0 0 24 24"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h10"/></svg></button>
+</aside>
+<div class="main">
+<header><div><p class="eyebrow">FiscalGuard</p><b id="vt">Resumen</b></div><span class="sp"></span><span id="who"></span><span class="av" aria-hidden="true"></span></header>
+<p id="msg" role="status"></p>
+<section id="resumen"></section>
+<section id="alertas" hidden></section>
+<section id="contrib" hidden></section>
+</div>
+<aside id="panel" hidden></aside></div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vis-network@9.1.9/standalone/umd/vis-network.min.js"></script>
+<script src="app.js"></script></body></html>

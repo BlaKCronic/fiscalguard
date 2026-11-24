@@ -1,0 +1,5 @@
+paso,segundos
+1_generar_datos,256.4
+2_cargar_a_hdfs,177.2
+3_etl_raw_a_curated,522.3
+4_features_por_contribuyente,183

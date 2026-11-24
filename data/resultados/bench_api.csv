@@ -1,0 +1,9 @@
+endpoint,ruta,n,errores,serie_p50_ms,serie_p95_ms,serie_max_ms,carga_concurrencia,carga_p50_ms,carga_p95_ms,carga_peticiones_por_s
+"health","/health",50,0,103.9,114.3,133.8,10,104.2,203.3,52.5
+"kpis (tablero)","/kpis",50,0,1203,1816.8,1981.7,10,1549.8,3025.5,4.9
+"alertas (página 1)","/alertas?limit=25",50,0,106.6,115.4,119,10,111.4,343.1,50.7
+"alertas streaming","/alertas?tipo=streaming&limit=25",50,0,106.9,121,126.2,10,110,142.9,55
+"alertas puntaje >= 80","/alertas?min_puntaje=80&limit=25",50,0,108.3,119.8,133.4,10,113.5,140.4,34.4
+"contribuyentes alto","/contribuyentes?nivel=alto&limit=25",50,0,110,210.2,211.9,10,212.3,564.8,35.1
+"contribuyente por RFC","/contribuyentes/WDZ250224KEP",50,0,208,221.8,229.5,10,207.1,222.2,46.9
+"red por RFC","/red/NCDW180703DMC",50,0,204.9,221.4,223.6,10,210,282.4,41.2

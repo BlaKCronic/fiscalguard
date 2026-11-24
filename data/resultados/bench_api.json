@@ -1,0 +1,113 @@
+{
+  "fecha": "2026-11-23T02:31:05.870Z",
+  "url": "http://localhost:3000",
+  "n": 50,
+  "concurrencia": 10,
+  "login_ms": 353.7,
+  "resultados": [
+    {
+      "endpoint": "health",
+      "ruta": "/health",
+      "n": 50,
+      "errores": 0,
+      "serie_p50_ms": 103.9,
+      "serie_p95_ms": 114.3,
+      "serie_max_ms": 133.8,
+      "carga_concurrencia": 10,
+      "carga_p50_ms": 104.2,
+      "carga_p95_ms": 203.3,
+      "carga_peticiones_por_s": 52.5
+    },
+    {
+      "endpoint": "kpis (tablero)",
+      "ruta": "/kpis",
+      "n": 50,
+      "errores": 0,
+      "serie_p50_ms": 1203,
+      "serie_p95_ms": 1816.8,
+      "serie_max_ms": 1981.7,
+      "carga_concurrencia": 10,
+      "carga_p50_ms": 1549.8,
+      "carga_p95_ms": 3025.5,
+      "carga_peticiones_por_s": 4.9
+    },
+    {
+      "endpoint": "alertas (página 1)",
+      "ruta": "/alertas?limit=25",
+      "n": 50,
+      "errores": 0,
+      "serie_p50_ms": 106.6,
+      "serie_p95_ms": 115.4,
+      "serie_max_ms": 119,
+      "carga_concurrencia": 10,
+      "carga_p50_ms": 111.4,
+      "carga_p95_ms": 343.1,
+      "carga_peticiones_por_s": 50.7
+    },
+    {
+      "endpoint": "alertas streaming",
+      "ruta": "/alertas?tipo=streaming&limit=25",
+      "n": 50,
+      "errores": 0,
+      "serie_p50_ms": 106.9,
+      "serie_p95_ms": 121,
+      "serie_max_ms": 126.2,
+      "carga_concurrencia": 10,
+      "carga_p50_ms": 110,
+      "carga_p95_ms": 142.9,
+      "carga_peticiones_por_s": 55
+    },
+    {
+      "endpoint": "alertas puntaje >= 80",
+      "ruta": "/alertas?min_puntaje=80&limit=25",
+      "n": 50,
+      "errores": 0,
+      "serie_p50_ms": 108.3,
+      "serie_p95_ms": 119.8,
+      "serie_max_ms": 133.4,
+      "carga_concurrencia": 10,
+      "carga_p50_ms": 113.5,
+      "carga_p95_ms": 140.4,
+      "carga_peticiones_por_s": 34.4
+    },
+    {
+      "endpoint": "contribuyentes alto",
+      "ruta": "/contribuyentes?nivel=alto&limit=25",
+      "n": 50,
+      "errores": 0,
+      "serie_p50_ms": 110,
+      "serie_p95_ms": 210.2,
+      "serie_max_ms": 211.9,
+      "carga_concurrencia": 10,
+      "carga_p50_ms": 212.3,
+      "carga_p95_ms": 564.8,
+      "carga_peticiones_por_s": 35.1
+    },
+    {
+      "endpoint": "contribuyente por RFC",
+      "ruta": "/contribuyentes/WDZ250224KEP",
+      "n": 50,
+      "errores": 0,
+      "serie_p50_ms": 208,
+      "serie_p95_ms": 221.8,
+      "serie_max_ms": 229.5,
+      "carga_concurrencia": 10,
+      "carga_p50_ms": 207.1,
+      "carga_p95_ms": 222.2,
+      "carga_peticiones_por_s": 46.9
+    },
+    {
+      "endpoint": "red por RFC",
+      "ruta": "/red/NCDW180703DMC",
+      "n": 50,
+      "errores": 0,
+      "serie_p50_ms": 204.9,
+      "serie_p95_ms": 221.4,
+      "serie_max_ms": 223.6,
+      "carga_concurrencia": 10,
+      "carga_p50_ms": 210,
+      "carga_p95_ms": 282.4,
+      "carga_peticiones_por_s": 41.2
+    }
+  ]
+}

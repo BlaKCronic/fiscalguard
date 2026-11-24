@@ -1,0 +1,12 @@
+.env
+data/raw/
+data/**/raw/
+data/ground_truth/
+data/**/ground_truth/
+__pycache__/
+*.pyc
+node_modules/
+logs/
+.pytest_cache/
+.venv/
+venv/

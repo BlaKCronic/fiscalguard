@@ -1,0 +1,4 @@
+﻿"fecha","mapreduce_job_s","mapreduce_total_s","spark_job_s","spark_total_s","aceleracion_job","aceleracion_total","resultados_identicos"
+"2026-11-22T17:34:08","34.6","36.4","16.8","24.8","2.06","1.47","True"
+"2026-11-22T18:33:08","32.6","34","16.6","24.1","1.96","1.41","True"
+"2026-11-22T20:27:01","100","101.5","27.8","34.9","3.6","2.91","True"
